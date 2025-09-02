@@ -122,7 +122,8 @@ class JapInput(QWidget):
         hint2 = self.doTransferJStat(hint1, 'kake')
         if hint1 == '' and hint2 == '':
             return []
-        return [hint2, hint1]
+        #return [hint2, hint1]
+        return [hint1, hint2]
 
     def doTransfer(self, text, jStat):
         """
